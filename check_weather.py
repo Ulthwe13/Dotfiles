@@ -6,12 +6,13 @@ import re
 import time
 import os
 
+location = "<location>"
+filename = "weather.txt"
 
 
 def strip_ansi(forecast_string):
 	ansi_escape = re.compile(r'\x1b[^m]*m')
 	forecast_string = ansi_escape.sub('', forecast_string)
-	forecast_string = " ".join(re.findall("[a-zA-Z0-9]+", forecast_string))
 	forecast_string = " ".join(re.findall("[a-zA-Z0-9\°]+", forecast_string))
 	return forecast_string
 
