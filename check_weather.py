@@ -25,13 +25,7 @@ def grab_weather(location):
 	return strip_ansi(weather)
 
 
-forecast = grab_weather(location)
-temp = re.split(r'(^[^\d]+)', forecast)[2]
-if len(temp) > 4:
-
-	summary = re.split(r'(^[^\d]+)', forecast)[1]
-
-def save_file(summary, temp):
+def save_forecast(summary, temp):
 	if not os.path.exists(filename):
 		file(filename, 'w').close()
 
@@ -40,3 +34,9 @@ def save_file(summary, temp):
 	f.truncate()
 	f.write(summary + "\t" + temp)
 	f.close()
+
+
+forecast = grab_weather(location)
+temp = re.split(r'(^[^\d]+)', forecast)[2]
+summary = re.split(r'(^[^\d]+)', forecast)[1]
+save_forecast(summary, temp)
