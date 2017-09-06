@@ -1,3 +1,4 @@
+# Fetches various system information which is then piped to lemonbar 
 #System Icons
 CLOCK_ICON="%{F#6B59B3} \ue015 %{F-}"
 SPEAKER_ICON="%{F#6B59B3} \ue203 %{F-}"
