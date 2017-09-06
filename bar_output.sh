@@ -6,7 +6,7 @@ CONN_ICON='\ue21e'
 DC_ICON='\ue21b'
 NOMAIL_ICON='%{F#6B59B3} \ue071 %{F-}'
 NEWMAIL_ICON='%{F#6B59B3} \ue070 %{F-}'
-#Weather Icons
+#Weather Icons 
 MOON_ICON='\ue233'
 SUNNY_ICON="\ue234"
 LIGHTNING_ICON="\ue22c"
@@ -96,9 +96,9 @@ is_mute() {
 	
 	if [[ "${mute,,}" == *"[off]"* ]]
 	then
-		icon="$SPEAKER_ICON"
-	else
 		icon="$MUTE_ICON"
+	else
+		icon="$SPEAKER_ICON"
 	fi;
 	echo "$icon"
 }
