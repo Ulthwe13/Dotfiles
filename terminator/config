@@ -1,0 +1,25 @@
+[global_config]
+  borderless = True
+  title_font = Tamsyn Bold Italic 9
+  title_use_system_font = False
+[keybindings]
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+[plugins]
+[profiles]
+  [[default]]
+    cursor_color = "#aaaaaa"
+    font = Tamsyn 12
+    foreground_color = "#6b59b3"
+    icon_bell = False
+    palette = "#3b3b3b:#b3596b:#b35987:#b359a4:#a459b3:#8859b3:#6b59b3:#8c8c8c:#121212:#8c4655:#8c466a:#8c4681:#81468c:#6a468c:#55468c:#737373"
+    scroll_on_output = True
+    scrollback_lines = 5000
+    show_titlebar = False
+    use_system_font = False
